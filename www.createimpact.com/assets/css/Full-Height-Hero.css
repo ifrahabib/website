@@ -1,0 +1,34 @@
+.software-dev #hero {
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/software.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.45);
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 125px;
+}
+
+@media (max-width: 992px) {
+  .LandingTitle {
+    /*font-size: 20px;*/
+  }
+}
+
+.LandingTitle {
+  text-transform: none !important;
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .LandingSubtitle {
+    font-size: 22pt;
+  }
+}
+

@@ -1,0 +1,27 @@
+header.masthead {
+  background: white;
+}
+
+.btn.active, .btn:active, .btn:focus, .btn:hover {
+  border-color: #ee6b4e;
+  background-color: rgb(55,55,55);
+}
+
+.features-clean .item .icon {
+  color: rgb(255,182,0);
+}
+
+html {
+  overflow-x: hidden;
+  /*height: 50%;*/
+}
+
+.mission-vision-div:hover .mission-text {
+  color: red;
+}
+
+
+nav a:hover {
+  color: #97bfd8;
+}
+
