@@ -47,7 +47,7 @@ div.smp-box:hover{
 }
 
 div#smp-box-a {
-    background-image: url("/assets/img/building.jpg"); 
+    background-color: #3c5b80;
     background-size:cover;
     background-repeat: no-repeat;
 }

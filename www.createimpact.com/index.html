@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html style="/*overflow-x: hidden;*/ /*width: 100%;*/">
+<html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create Impact</title>
+    <link rel="stylesheet" href="assets/css/b.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" />
@@ -36,22 +38,35 @@
     <link rel="stylesheet" href="assets/css/untitled-2.css" />
     <link rel="stylesheet" href="assets/css/untitled.css" />
     <link rel="stylesheet" href="assets/css/review.css">
-    
+    <link rel="stylesheet" href="assets/css/a.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Make the image fully responsive */
+    </style>
 </head>
 
 <body id="page-top" class="home-page" style="overflow-x: clip; /*width: 100%;*/">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="padding-top: 18px">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="padding-top: 18px; background-color:white">
         <div class="container">
-            <a class="js-scroll-trigger" href="#home"><img src="../www.createimpact.com/assets/img/Create Impact.png" style="width: 65px" /></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="js-scroll-trigger" href="#home">
+                <img src="../www.createimpact.com/assets/img/Create Impact.png" style="width: 65px" />
+            </a>
+            <a class="js-scroll-trigger mx-5 px-3" href="#home" style="text-decoration: none;  position: fixed; overflow: hidden;">
+                <div class="word"></div>
+            </a>
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about-us" style="
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about-us" style="
               font-family: Nunito, sans-serif;
               font-weight: bold;
               color: #3c5b80; /*padding-left: 25px;*/
@@ -70,19 +85,15 @@
                 ">Services
             </a>
                     </li>
-                 
-            <li class="nav-item">
-              <a
-                class="nav-link js-scroll-trigger"
-                href="#contact"
-                style="
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact" style="
                   font-family: Nunito, sans-serif;
                   font-weight: bold;
                   color: #3c5b80; /*padding-left: 25px;*/
                   font-size: 13px;
                   margin-right: 25px;
-                "
-                >Contact 
+                ">Contact 
               </a>
 
                     </li>
@@ -117,15 +128,14 @@
                   margin-bottom: 53px;
                   font-family: Nunito, sans-serif;
                   margin-top: 0.5em;
-                ">
-                            We provide unique blend of solutions and services for your business growth<br />
-                        </p>
-                        <a class="btn btn-outline-warning btn-xl js-scroll-trigger abc" role="button" href="#our-services" style="
+                ">We assist your business with digital transformation so that it may grow digitally with our top-notch services.</p>
+                        <a class="btn btn-outline-warning btn-lg js-scroll-trigger abc rounded-pill px-5 py-3" role="button" href="#our-services" style="
                   color: #ee6b4e;
                   border-color: #ee6b4e;
                   border-width: 3px;
                   font-family: Nunito, sans-serif;
                   font-weight: 700;
+                  font-size: 10px;
                   background-color: transparent;
                 " data-bss-hover-animate="swing "> our services</a
               >
@@ -188,9 +198,9 @@
                   color: rgb(249, 249, 249);
                 "
               >
-                The Create Impact's mission is to provide excellent customer services
-                by connecting the business community through variety of
-                solutions and services within affordability and budget
+              Create Impact is on the mission of digital transformation
+              of all local street/ road businesses and local brands and
+              also help out newly startups to grow.
               </p>
             </div>
           </div>
@@ -231,9 +241,9 @@
                   color: var(--white);
                 "
               >
-                Our vision is to expand footprint in small and medium
-                enterprises and inspire people and business around the globe
-                through the creative ideas and multicultural experience
+              Launching Pakistan's first fasting digital services portal where all
+              local businesses, local brands, and new start-ups will
+             get all digital services at one platform.
               </p>
             </div>
           </div>
@@ -241,13 +251,7 @@
       </div>
 
     </section>
-    <img src="assets/img/wave-top.svg" id="about-us" />
-    <section class="impact"  style="
-    background: #97bfd8;
-    padding: 0;
-    margin-bottom: 0;
-    margin-top: -10px;
-  ">
+    <section class="impact"  >
       <div class="impact text">
         <div class="impact-text-1">
           <h1 class="text-center"
@@ -259,98 +263,80 @@
             font-size: 38px;
             font-weight: 700;
           "> 
-          Why choose IMPACT?</h1>
-          <hr
-            style="
-              border-radius: 49px;
-              margin-top: 5px;
-              margin-bottom: 30px;
-              width: 100px;
-              border: 3px solid #ee6b4e;
-              background-color: #ee6b4e;
-            "
-          />
-          <p class="text-center"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-          style="
-            font-family: Nunito, sans-serif;
-            color: whitesmoke;
-            margin: 0% 15% 0% 15%">
-            IMPACT is all about helping you make a positive impression with your customer base. It’s about first impressions--and then lasting impressions. It’s about influencing how the world sees you, positioning you in the best light possible so you can keep doing what it is that you do best.</p>
-        </div>
-        <div class="impact-text-2"
-        style="
-          height: 60vh;
-          margin-top: 10px;
-          margin-left: 30px;
-          display: flex; margin: 0em 2em; justify-content: space-between; margin: 0; /*width: 100% !important;*/ flex-direction: row; 
-          ">
-          <div class="text-l"  data-bss-hover-animate="pulse" 
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-          style="
-            height: 60vh;
-            width: 31%;
-            float: left;
-            text-align: center;
-            margin: 10px;
-            padding: 20px;
-            display: flex; flex-direction: column;  width: 500px;
-          ">
-            <h1 class="text-center"
-            style="
-            font-weight: bold;
-            font-family: Nunito, sans-serif;
-            color:#3c5b80;
-            font-size: 30px;">Responsive</h1>
-            <p class="p1" style="color: whitesmoke; font: sans-serif;">With IMPACT, there is no call center, no check-box formula for designing your project, no waiting in line. Rebecca has owned and operated IMPACT since 2001, and when you reach out, you connect with her directly, every time. If it’s important to you, it’s important to us.</p>
+          Why choose CREATE IMPACT?</h1>
+          <hr data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style="
+          border-radius: 49px;
+          margin-top: 5px; margin-left: auto;
+    margin-right: auto;
+          margin-bottom: 30px;
+          width: 100px;
+          border: 3px solid #ee6b4e;
+          background-color: #ee6b4e;
+        " />
           </div>
-          <div class="text-middle"  data-bss-hover-animate="pulse" 
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-            style="
-            height: 60vh;
-            width: 31%;
-            float: left;
-            text-align: center;
-            margin: 10px;
-            padding: 20px;display: flex; width: 500px; flex-direction: column;  
-          "> 
-            <h1 class="r1" style="
-            font-weight: bold;
-            font-family: Nunito, sans-serif;
-            color: #3c5b80;
-            font-size: 30px;">Full Service</h1>
-            <p class="p1" style="color: whitesmoke; font: sans-serif;">A one-stop shop: our creative work includes graphic design, web design, photography, and copy writing. We produce brochures, annual reports, business forms, campaign materials, mailers, posters, websites and more. We can help you with anything in print, keep your website up to date (or build a new one!), and capture great images that you can use for years to come.</p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="square col" id="square1" style="margin:3%;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content1">
+                    <p class="p-1" >
+                      Startups can pay later after getting fund.
+                    </p>
+                
+                  </div>
+                
+                
+                </div>
+                <div class="square col" id="square2" style="margin: 3%;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content1">
+                    <p class="p-1" >
+                      Unlimited revisions 100% satisfactory work life time guaranteed of service.
+                    </p>
+                
+                  </div>
+                
+                
+                </div>
+                <div class="square col" id="square3" style="margin: 3%;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content1">
+                    <p class="p-1" >
+                      Free digital consultancy service for street business.
+                    </p>
+                
+                  </div>
+                
+                
+                </div>
+                <div class="square col" id="square4" style="margin: 3%;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content1">
+                    <p class="p-1" >
+                      
+                      Best pricing for local brands.
+                    
+                     </p>
+                
+                  </div>
+                
+                
+                </div>
+                </div>
+      
           </div>
-          <div class="text-r"  data-bss-hover-animate="pulse" 
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-          style="
-            height: 60vh;
-            width: 31%;
-            float: left;
-            text-align: center;
-            margin: 10px;
-            padding: 20px;  display: flex;  width: 500px; flex-direction: column;">
-            <h1 class="r1" style="
-            font-weight: bold;
-            font-family: Nunito, sans-serif;
-            color: #3c5b80;
-            font-size: 30px;">Personalised</h1>
-            <p class="p1" style="color: whitesmoke; font: sans-serif;">Your business is unique, and your marketing solutions should be too. IMPACT works with you to create a customized, professional look that will set you apart from your competitors. Just imagine--what if everyone knew how good you are at what you do?</p>
-          </div>
-        </div>
       </div>
 
 
     </section>
-    <img src="assets/img/wave-bottom.svg" class="impact-img" style="margin-top: -10px" />
     <section id="our-services" class="services" style="position: relative">
       <div class="container-md section-title">
         <div class="intro" style="padding-bottom: 25px">
@@ -367,29 +353,15 @@
           >
             OUR SERVICES
           </h2>
-          <hr
-            style="
-              border-radius: 49px;
-              margin-top: 5px;
-              margin-bottom: 30px;
-              width: 100px;
-              border: 3px solid #ee6b4e;
-              background-color: #ee6b4e;
-            "
-          />
-          <p
-            class="text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            style="
-              font-family: Nunito, sans-serif;
-              color: rgb(151, 191, 216,0.7);
-            "
-          >
-            We provide agile digital solution from website development to
-            digital marketing and trading
-          </p>
+          <hr data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style="
+          border-radius: 49px;
+          margin-top: 5px; margin-left: auto;
+    margin-right: auto;
+          margin-bottom: 30px;
+          width: 100px;
+          border: 3px solid #ee6b4e;
+          background-color: #ee6b4e;
+        " />
         </div>
       </div>
 
@@ -430,37 +402,27 @@
                     Want to start your own business? Our company is highly accessible to businesses of all shapes and sizes, no matter your budget size.<br /><a class="details-link" href="services/start-your-business.html"><i
                 class="fa fa-arrow-right details-icon"
                 data-bss-hover-animate="swing"
-                style=" color: white;/*margin-bottom: 15px;*/"
+                style="font-size: 20px; color: white;/*margin-bottom: 15px;*/"
               ></i
             ></a>
-                </p>
+                        </p>
 
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px"></div>
             </div>
-          </div>
-          
-          <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center"
-            style="padding-right: 0px; padding-left: 0px"
-          ></div>
-      </div>
-      <div class="row" style="margin-bottom: 50px">
-        
-        <div  class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"
-        style="padding-right: 0px; padding-left: 0px">
-        </div>  
-        <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-end"
-            style="
+            <div class="row" style="margin-bottom: 50px">
+
+                <div class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px">
+                </div>
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-end" style="
               padding-right: 0px;
               padding-left: 0px;
               display: flex;
               justify-content: center;
-            "
-          >
-            <div
-              class="text-center icon-box cards"
-              data-bss-hover-animate="pulse"
-              style="
+            ">
+                    <div class="text-center icon-box cards" data-bss-hover-animate="pulse" style="
                 border-radius: 100%;
                 height: 300px;
                 padding-right: 10px;
@@ -468,104 +430,78 @@
                 padding-top: 30px;
                 padding-bottom: 30px;
                 width: 300px;
-              "
-            >
-              <div class="icon">
-                <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
-                        <h4 class="title" style="
+              ">
+                        <div class="icon">
+                            <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
+                            <h4 class="title" style="
                     font-family: Nunito, sans-serif;
                     border-color: #3c5b80;
                     color:#3c5b80;
                   ">
-                            <strong>SEO &amp; Content Writing</strong><br />
-                            <a href="#"></a>
-                        </h4>
-                    </div>
-                    <p class="description" style="
+                                <strong>SEO &amp; Content Writing</strong><br />
+                                <a href="#"></a>
+                            </h4>
+                        </div>
+                        <p class="description" style="
                   font-family: Nunito, sans-serif;
                   color: whitesmoke;
                   margin-top: -25px;
                   line-height: 20px;
                 ">
-                        Creating engaging content and providing professional, fully-managed SEO solutions for all business sizes and verticals. 
-                        <br/><a class="details-link" href="services/seo-content-writing.html"><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" color: white; /*margin-bottom: 15px;*/"></i
+                            Creating engaging content and providing professional, fully-managed SEO solutions for all business sizes and verticals.
+                            <br/><a class="details-link" href="services/seo-content-writing.html"><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style="font-size: 20px; color: white; /*margin-bottom: 15px;*/"></i
                       ></a>
-                    </p>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
-      <div class="row" style="margin-bottom: 50px"> 
-          <div
-            class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-end align-items-xl-center"
-            style="
+            <div class="row" style="margin-bottom: 50px">
+                <div class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-end align-items-xl-center" style="
               padding-right: 0px;
               padding-left: 0px;
               display: flex;
               justify-content: center;
-            "
-          >
-            <div
-              class="text-center icon-box cards"
-              data-bss-hover-animate="pulse"
-              style="
+            ">
+                    <div class="text-center icon-box cards" data-bss-hover-animate="pulse" style="
                 border-radius: 100%;
                 height: 300px; /*padding-right: 10px;*/ /*padding-left: 10px;*/
                 padding-top: 30px;
                 padding-bottom: 30px;
                 width: 300px;
-              "
-            >
-            <div class="icon">
-              <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
-                      <h4 class="title" style="
+              ">
+                        <div class="icon" style="margin-top: -15px;">
+                            <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
+                            <h4 class="title" style="
                   font-family: Nunito, sans-serif;
                   border-color: #3c5b80;
                   color:#3c5b80;
                 ">
-                  <strong>Graphic Designing &amp; Video Editing</strong><br />
-                </h4>
-              </div>
-              <p
-                class="description"
-                style="
+                                <strong>Graphic Designing &amp; Video Editing</strong><br />
+                            </h4>
+                        </div>
+                        <p class="description" style="
                   font-family: Nunito, sans-serif;
-                  color: rgba(41, 41, 41, 0.7);
+                  color: white;
                   margin-top: -25px;
                   line-height: 20px;
-                "
-              >
-                We are expert in the state of the art and customised graphic designing and video anomation products and services.<br /><a
-                  class="details-link"
-                  href="services/graphic-video.html"
-                  ><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" color: white; /*margin-bottom: 15px;*/"></i
+                ">
+                            We are expert in the state of the art and customised graphic designing and video anomation products and services.<br /><a class="details-link" href="services/graphic-video.html"><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style="font-size: 20px; color: white; /*margin-bottom: 15px;*/"></i
                     ></a>
-                  </p>
-          </div>
-          </div>
-          <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center"
-            style="padding-right: 0px; padding-left: 0px"
-          ></div>
-      </div>
-      <div class="row" style="margin-bottom: 50px">
-        
-        <div
-        class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"
-        style="padding-right: 0px; padding-left: 0px"
-        ></div>  
-        <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-center"
-            style="
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px"></div>
+            </div>
+            <div class="row" style="margin-bottom: 50px">
+
+                <div class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px"></div>
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-center" style="
               padding-right: 0px;
               padding-left: 0px;
               display: flex;
               justify-content: center;
-            "
-          >
-            <div
-              class="text-center icon-box cards"
-              data-bss-hover-animate="pulse"
-              style="
+            ">
+                    <div class="text-center icon-box cards" data-bss-hover-animate="pulse" style="
                 border-radius: 100%;
                 height: 300px;
                 padding-right: 10px;
@@ -573,112 +509,78 @@
                 padding-top: 30px;
                 padding-bottom: 30px;
                 width: 300px;
-              "
-            >
-            <div class="icon">
-              <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
-                      <h4 class="title" style="
+              ">
+                        <div class="icon" style="margin-top: -15px;">
+                            <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
+                            <h4 class="title" style="
                   font-family: Nunito, sans-serif;
                   border-color: #3c5b80;
                   color:#3c5b80;
                 ">
-                  <strong>Social Media &amp; Digital Marketing</strong><br />
-                </h4>
-              </div>
-              <p
-                class="description"
-                style="
+                                <strong>Social Media &amp; Digital Marketing</strong><br />
+                            </h4>
+                        </div>
+                        <p class="description" style="
                   font-family: Nunito, sans-serif;
-                  color: rgba(41, 41, 41, 0.7);
+                  color:white;
                   margin-top: -25px;
                   line-height: 20px;
-                "
-              >
-               Our unique and creative digital<br />marketing and social media 
-                solutions standout your services  <br /> and products
-                in the market.<br /><a
-                  class="details-link"
-                  href="services/social-media-digital.html"
-                  ><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" color: white; /*margin-bottom: 15px;*/"></i
+                ">
+                            Our unique and creative digital<br />marketing and social media solutions standout your services <br /> and products in the market.<br /><a class="details-link" href="services/social-media-digital.html"><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" font-size: 20px;color: white; /*margin-bottom: 15px;*/"></i
                     ></a>
-                  </p>
-            </div>
-          </div>
+                        </p>
+                    </div>
+                </div>
 
-      </div>
-      <div class="row" style="margin-bottom: 50px">
-          <div
-            class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-end align-items-xl-center"
-            style="
+            </div>
+            <div class="row" style="margin-bottom: 50px">
+                <div class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-end align-items-xl-center" style="
               padding-right: 0px;
               padding-left: 0px;
               display: flex;
               justify-content: center;
-            "
-          >
-            <div
-              class="text-center icon-box cards"
-              data-bss-hover-animate="pulse"
-              style="
+            ">
+                    <div class="text-center icon-box cards" data-bss-hover-animate="pulse" style="
                 border-radius: 100%;
                 height: 300px; /*padding-right: 10px;*/ /*padding-left: 10px;*/
                 padding-top: 30px;
                 padding-bottom: 30px;
                 width: 300px;
-              "
-            >
-            <div class="icon">
-              <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
-                      <h4 class="title" style="
+              ">
+                        <div class="icon">
+                            <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
+                            <h4 class="title" style="
                   font-family: Nunito, sans-serif;
                   border-color: #3c5b80;
                   color:#3c5b80;
                 ">
-                  <strong> Web &amp; App Develoment</strong><br />
-                </h4>
-              </div>
-              <p
-                class="description"
-                style="
+                                <strong> Web &amp; App Develoment</strong><br />
+                            </h4>
+                        </div>
+                        <p class="description" style="
                   font-family: Nunito, sans-serif;
-                  color: rgba(41, 41, 41, 0.7);
+                  color: white;
                   margin-top: -25px;
                   line-height: 20px;
-                "
-              >
-                Our dedicated team of web and mobile app developers ensure end to end monitoring, development and support.<br /><a
-                  class="details-link"
-                  href="services/website-design.html"
-                  ><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" color: white; /*margin-bottom: 15px;*/"></i
+                ">
+                            Our dedicated team of web and mobile app developers ensure end to end monitoring, development and support.<br /><a class="details-link" href="services/website-design.html"><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style="font-size: 20px; color: white; /*margin-bottom: 15px;*/"></i
                     ></a>
-                  </p>
-          </div>
-          </div>
+                        </p>
+                    </div>
+                </div>
 
-          <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center"
-            style="padding-right: 0px; padding-left: 0px"
-          ></div>
-      </div>
-      <div class="row" style="margin-bottom: 50px">
-        
-        <div
-        class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"
-        style="padding-right: 0px; padding-left: 0px"
-      ></div>  
-        <div
-            class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-center"
-            style="
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px"></div>
+            </div>
+            <div class="row" style="margin-bottom: 50px">
+
+                <div class="col-md-6 col-xl-4 offset-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-right: 0px; padding-left: 0px"></div>
+                <div class="col-md-6 col-xl-4 offset-xl-0 d-xl-flex justify-content-xl-start align-items-xl-center" style="
               padding-right: 0px;
               padding-left: 0px;
               display: flex;
               justify-content: center;
-            "
-          >
-            <div
-              class="text-center icon-box cards"
-              data-bss-hover-animate="pulse"
-              style="
+            ">
+                    <div class="text-center icon-box cards" data-bss-hover-animate="pulse" style="
                 border-radius: 100%;
                 height: 300px;
                 padding-right: 10px;
@@ -686,272 +588,233 @@
                 padding-top: 30px;
                 padding-bottom: 30px;
                 width: 300px;
-              "
-            >
-            <div class="icon">
-              <i class="fa fa-angle-down" style="margin-bottom: 15px"></i>
-                      <h4 class="title" style="
+              ">
+                        <div class="icon" style="margin-top: -15px;">
+                            <i class="fa fa-angle-down" style="margin-left: 2%; margin-right: 2%;margin-top: 2%; margin-bottom: 15px"></i>
+                            <h4 class="title" style="
                   font-family: Nunito, sans-serif;
                   border-color: #3c5b80;
                   color:#3c5b80;
                 ">
-                  <strong>Business Analysis &amp; Data Science Solutions</strong><br />
-                </h4>
-              </div>
-              <p
-                class="description"
-                style="
+                                <strong>Business Analysis &amp;<br /> Data Science Solutions</strong><br />
+                            </h4>
+                        </div>
+                        <p class="description" style="
                   font-family: Nunito, sans-serif;
-                  color: rgba(41, 41, 41, 0.7);
+                  color:white;
                   margin-top: -25px;
                   line-height: 20px;
-                "
-              >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias sunt consectetur non illum dolorum facere eius obcaecati, suscipit explicabo perferendis perspiciatis odio incidunt magni.<br /><a
-                  class="details-link"
-                  href="services/business-data.html"
-                  ><i class="fa fa-arrow-right details-icon" data-bss-hover-animate="swing" style=" color: white; /*margin-bottom: 15px;*/"></i
+                ">
+                            We help you determine your <br />company's strengths and <br />weaknesses, provide solutions to become a profitable business.
+                            <br><br></p>
+                        <a class="details-link" href="services/business-data.html"><i class="fa fa-arrow-right details-icon " data-bss-hover-animate="swing" style=" font-size: 20px; color: white; /*margin-bottom: 15px;*/"></i
                     ></a>
-                  </p>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          
-      </div>    
-    </section>
-    <section id="clients">
-            <h1 class="text-center" data-aos="fade-down" data-aos-duration="1000" style="
+            </section>
+            <section id="clients">
+                <h1 class="text-center" data-aos="fade-down" data-aos-duration="1000" style="
             font-family: Nunito, sans-serif;
             color: rgb(60, 91, 128);
             font-size: 38px;
             font-weight: 700;
           ">
-                CLIENTS</h1>
-            <hr style="
-                  border-radius: 49px;
-                  margin-top: 5px;
-                  margin-bottom: 50px;
-                  width: 100px;
-                  border: 3px solid #ee6b4e;
-                  background-color: #ee6b4e;
-                " />
-            <div id="all-clients" class="clients-container" >
-                <div>
-                    <div data-bss-hover-animate="pulse" style="width: 100%; height:auto;" data-aos="slide-right" data-aos-duration="1000">
-                        <h2 style="font-size: 20px;font-family: Nunito, sans-serif; font-weight: 600;color:#97bfd8; ">Client Relationship</h2>
-                        <p style="font-size: 120px;font-family: Nunito, sans-serif; color: #3c5b80; ">97%</p>
+                    CLIENTS</h1>
+                <hr data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style="
+                    border-radius: 49px;
+                    margin-top: 5px;
+                    margin-left: auto;
+    margin-right: auto;
+                    margin-bottom: 30px;
+                    width: 100px;
+                    border: 3px solid #ee6b4e;
+                    background-color: #ee6b4e;
+                  " />
+                <div id="all-clients" class="clients-container">
+                    <div>
+                        <div data-bss-hover-animate="pulse" style="width: 100%; height:auto;" data-aos="slide-right" data-aos-duration="1000">
+                            <h2 style="font-size: 20px;font-family: Nunito, sans-serif; font-weight: 600;color:#97bfd8; ">Client Relationship</h2>
+                            <p style="font-size: 120px;font-family: Nunito, sans-serif; color: #3c5b80; ">97%</p>
+                        </div>
+                        <div data-bss-hover-animate="pulse" style="width: 100%; height: auto;" data-aos="slide-left" data-aos-duration="1000">
+                            <h2 style="font-size: 20px; font-family: Nunito, sans-serif; font-weight: 600;color:#97bfd8; ">Client Satisfaction</h2>
+                            <p style="font-size: 120px;font-family: Nunito, sans-serif;  color:#3c5b80;">90%</p>
+                        </div>
+                        <div data-bss-hover-animate="pulse" style="width: 100%; height: auto;" data-aos="slide-right" data-aos-duration="1000">
+                            <h2 style="font-size: 20px; font-family: Nunito, sans-serif; font-weight: 600; color:#97bfd8; ">Repeat Rate</h2>
+                            <p style="font-size: 120px; font-family: Nunito, sans-serif; color: #3c5b80;">85%</p>
+                        </div>
                     </div>
-                    <div data-bss-hover-animate="pulse" style="width: 100%; height: auto;" data-aos="slide-left" data-aos-duration="1000">
-                        <h2 style="font-size: 20px; font-family: Nunito, sans-serif; font-weight: 600;color:#97bfd8; ">Client Satisfaction</h2>
-                        <p style="font-size: 120px;font-family: Nunito, sans-serif;  color:#3c5b80;">75%</p>
-                    </div>
-                    <div data-bss-hover-animate="pulse" style="width: 100%; height: auto;" data-aos="slide-right" data-aos-duration="1000">
-                        <h2 style="font-size: 20px; font-family: Nunito, sans-serif; font-weight: 600; color:#97bfd8; ">Repeat Rate</h2>
-                        <p style="font-size: 120px; font-family: Nunito, sans-serif; color: #3c5b80;">70%</p>
-                    </div>
-                </div>
+            </section>
             </div>
-    </section>
-    <section id="contact" class="contact bg-primary">
-            <h2 data-aos="fade-up" data-aos-duration="1000" style="
-              font-family: Nunito, sans-serif;
-              font-size: 38px;
-              color:#3c5b80;
-              font-weight: 700;
-            ">
-                CONTACT US
-            </h2>
-            <hr data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style="
-              border-radius: 49px;
-              margin-top: 5px;
-              margin-bottom: 30px;
-              width: 100px;
-              border: 3px solid #ee6b4e;
-              background-color: #ee6b4e;
-            " />
-            <div class="container modern-form" style="padding-right: 50px; padding-left: 50px">
-                <div class="text-center"></div>
-                <div class="modern-form__form-container" style="padding-top: 0px">
-                    <form data-bss-subject="New Message" data-bss-recipient="231e6c33b4dc06b4db02d7c5f88ee884">
-                        <div class="form-row">
-                            <div class="col col-contact">
-                                <div class="form-group modern-form__form-group--padding-r">
-                                    <input class="form-control input input-tr form-outline" type="text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" placeholder="Name*" style="
-                          font-family: Nunito, sans-serif;
-                          border-bottom: 2px solid #97bfd8;
-                          border-top: 0px;
-                          border-left: 0px; 
-                          border-right: 0px;
-                        " required="" />
-                                    <div class="line-box">
-                                        <div class="line"></div>
-                                    </div>
+            <section id="contact" class="contact">
+                <h2 data-aos="fade-up" data-aos-duration="1000" style="  font-family: Nunito, sans-serif; font-size: 38px;  color:#3c5b80;   font-weight: 700;  "> CONTACT US </h2>
+                <hr data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style=" border-radius: 49px; margin-top: 1px;   margin-left: 45.5%; margin-bottom: 30px; width: 100px; border: 3px solid #ee6b4e; background-color: #ee6b4e;    " />
+                <div class="container modern-form" style="padding-right: 50px; padding-left: 50px">
+                    <div class="modern-form__form-container" style="padding-top: 0px">
+                        <form name="contact-form" action="" method="post" id="contact-form">
+                            <div class="form-row">
+                                <div class="col col-contact">
+                                    <input type="text" name="your_name" placeholder="Name" class="form-control input input-tr form-outline" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-family: Nunito, sans-serif; border-bottom: 2px solid #97bfd8; border-top: 0px; border-left: 0px; border-right: 0px;  "
+                                        required="" />
+                                </div>
+                                <div class="col col-contact">
+                                    <input class="form-control input input-tr form-outline" type="text" name="your_phone" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" placeholder="Contact" style="  font-family: Nunito, sans-serif;   border-bottom: 2px solid #97bfd8;  border-top: 0px; border-left: 0px;   border-right: 0px; "
+                                        required="" inputmode="numeric" />
                                 </div>
                             </div>
-                            <div class="col col-contact">
-                                <div class="form-group modern-form__form-group--padding-l">
-                                    <input class="form-control input input-tr form-outline" type="text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" placeholder="Contact" style="
-                          font-family: Nunito, sans-serif;
-                          border-bottom: 2px solid #97bfd8;
-                          border-top: 0px;
-                          border-left: 0px; 
-                          border-right: 0px;
-                        " required="" inputmode="numeric" />
-                                    <div class="line-box">
-                                        <div class="line"></div>
-                                    </div>
+                            <div class="form-row">
+                                <div class="col col-contact" style="margin-top: 30px">
+                                    <input name="your_email" class="form-control input input-tr form-outline" type="email" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" placeholder="Email" style="font-family: Nunito, sans-serif; border-bottom: 2px solid #97bfd8;border-top: 0px; border-left: 0px; border-right: 0px;"
+                                        required="" inputmode="email" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col col-contact" style="margin-top: 50px">
-                                <div class="form-group modern-form__form-group--padding-r">
-                                    <input class="form-control input input-tr form-outline" type="text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" placeholder="Email*" style="
-                          font-family: Nunito, sans-serif;
-                          border-bottom: 2px solid #97bfd8;
-                          border-top: 0px;
-                          border-left: 0px; 
-                          border-right: 0px;
-                        " required="" inputmode="email" />
-                                    <div class="line-box">
-                                        <div class="line"></div>
-                                    </div>
+                            <div class="form-row">
+                                <div class="col col-contact" style="margin-top: 30px">
+
+                                    <select name="your_service" placeholder="Services" class="form-control input input-tr form-outline" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-family: Nunito, sans-serif; border-bottom: 2px solid #97bfd8; border-top: 0px; border-left: 0px; border-right: 0px;  "
+                                        required="">
+                                        <option value="" disabled selected hidden >Select Service</option>
+
+                                          <option value="Start your business">Start your business</option>
+                                          <option value="Graphic Designing">Graphic Designing</option>
+                                          <option value="Video Editing">Video Editing</option>
+                                          <option value="SEO">SEO</option>
+                                          <option value="Content Writing">Content Writing</option>
+                                          <option value="Social Media">Social Media</option>
+                                          <option value="Digital Marketing">Digital Marketing</option>
+                                          <option value="Web Development">Web Development</option>
+                                          <option value="App Development">App Development</option>
+                                          <option value="Business Analysis">Business Analysis</option>
+                                          <option value="Data Science Solutions">Data Science Solutions</option>
+                                        </select>
+                                </div>
+                                <div class="col col-contact" style="margin-top: 30px">
+                                    <input class="form-control input input-tr form-outline" type="text" name="your_price" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" placeholder="Price" style="  font-family: Nunito, sans-serif;   border-bottom: 2px solid #97bfd8;  border-top: 0px; border-left: 0px;   border-right: 0px; "
+                                        required="" inputmode="numeric" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="form-group modern-form__form-group--padding-t">
-                                    <textarea class="form-control input modern-form__form-control--textarea form-outline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" placeholder="Message*" style="
+
+                            <div class="form-row">
+                                <div class="col" style="margin-top: 30px">
+                                    <textarea name="comments" class="form-control input modern-form__form-control--textarea form-outline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" placeholder="Description" style="
                           font-family: Nunito, sans-serif;
                           border-bottom: 2px solid #97bfd8;
                           border-top: 0px;
                           border-left: 0px; 
                           border-right: 0px;
                         " required=""></textarea>
-                                    <div class="line-box">
-                                        <div class="line"></div>
-                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col text-center" style="padding-top: 57px">
-                                <button class="btn btn-primary btn-outline-warning btn-xl js-scroll-trigger" data-bss-hover-animate="swing" type="submit" style="
-                        color: #ee6b4e; background-color: transparent;
-                        border-width: 3px;
-                        font-family: Nunito, sans-serif;
-                        font-weight: 700;
-                      ">
-                      SUBMIT
-                    </button>
+                            <div class="form-row">
+                                <div class="col text-center" style="padding-top: 57px">
+                                    <button id="submit_form" name="submit" value="Submit" class="btn btn-primary btn-outline-warning btn-x js-scroll-trigger rounded-pill px-5 py-3" data-bss-hover-animate="swing" type="submit" style="border-color: #ee6b4e;  color: #ee6b4e; background-color: transparent;  border-width: 3px;  font-family: Nunito, sans-serif;  font-weight: 700; font-size: 13px;">GET A QUOTE
+                                    </button>
+
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                            <div class="response_msg"></div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            
-    </section>
-    
-    <section id="testim" class="testim">
-              <div class="testim-cover"> 
-          <div class="wrappp">          
-                <div class="wrap">
-                  
-                      <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                      <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                      <ul id="testim-dots" class="dots">
-                          <li class="dot active"></li><!--
-                          --><li class="dot"></li><!--
-                          --><li class="dot"></li><!--
-                          --><li class="dot"></li><!--
-                          --><li class="dot"></li>
-                          <li class="dot"></li>
-                      </ul>
-                      <div id="testim-content" class="cont">
-                          
-                          <div class="active">
-                              <div class="img"><img src="assets/img/building.jpg" alt=""></div>
-                              <h2>Lorem P. Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> 
-                              <p id="web">Website</p>                   
-                          </div>
-      
-                          <div>
-                              <div class="img"><img src="assets/profile picture.png" alt=""></div>
-                              <h2>Mr. Lorem Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
-                              <p id="web">Website</p> 
-                          </div>
-      
-                          <div>
-                              <div class="img"><img src="assets/IMG_2684.jpeg" alt=""></div>
-                              <h2>Lorem Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
-                              <p id="web">Website</p> 
-                            </div>
-      
-                          <div>
-                              <div class="img"><img src="assets/profile picture.png" alt=""></div>
-                              <h2>Lorem De Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
-                              <p id="web">Website</p> 
-                            </div>
-      
-                          <div>
-                              <div class="img">
-                                  <img src="assets/IMG_2684.jpeg" alt=""></div>
-                              <h2>Ms. Lorem R. Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
-                              <p id="web">Website</p> 
-                            </div>
 
-                            <div>
-                              <div class="img">
-                                  <img src="assets/IMG_2684.jpeg" alt=""></div>
-                              <h2>Ms. Lorem R. Ipsum</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
-                              <p id="web">Website</p> 
-                            </div>
-      
-                      </div>
-      
-                  </div>
-      </div> 
-      </div>
-      
-    </section>
+            </section>
 
-    <footer>
-            <div class="footer " style=" display: flex; margin: 0em 2em; justify-content: space-between; margin: 0; /*width: 100% !important;*/ padding: 5em 7em; flex-direction: row; ">
-                <div style="display: flex; flex-direction: column; align-items: start ">
-                    <div class="footer-text ">
-                        <i class="fa fa-envelope " style="color: #97bfd8; font-size: 20px; margin-right: 15px "></i>
-                        <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; ">
-                            &nbsp;createimpact22@gmail.com<br />
-                        </p>
-                    </div>
-                    <div class="footer-text ">
-                        <i class="fa fa-phone " style="color: #97bfd8; font-size: 20px; margin-right: 15px "></i>
-                        <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; ">
-                            (+92)320-1276028<br />
-                        </p>
-                    </div>
-                    <div class="footer-text " style="align-items: baseline ">
-                        <i class="fa fa-map-marker " style="color: #97bfd8; margin-right: 15px; font-size: 20px "></i>
-                        <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; width: 200px; ">
-                            ICCBS Technology Incubator and Industrial Park, University of Karachi, Karachi,&nbsp;Pakistan
-                        </p>
+            <section id="reviews" class="container-fluid col-lg-8 px-3">
+                <div class="align-content-center">
+                    <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000" style="
+              font-family: Nunito, sans-serif;
+              font-size: 38px;
+              color:#3c5b80;
+              font-weight: 700;
+            ">
+                        REVIEWS
+                    </h2>
+                    <hr class="d-flex justify-content-between" data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" style="
+              border-radius: 49px;
+              margin-top: 5px;
+              margin-bottom: 30px;
+              margin-left: auto;
+    margin-right: auto;
+              width: 100px;
+              border: 3px solid #ee6b4e;
+              background-color: #ee6b4e;
+            " />
 
-                    </div>
-                    
                 </div>
-                
-                <div class="footer-right " style="display: flex; width: 500px ">
-                    <div style=" display: flex; flex-direction: column; align-items: flex-start; ">
-                        <h1 style=" font-size: 25px; font-family: Nunito, sans-serif; font-weight: 700; margin-bottom: 25px; color: #ee6b4e; ">
-                            Services
-                        </h1>
-                        <a class="js-scroll-trigger service-link " href="services/start-your-business.html ">Start your business</a
+
+                <div id="carouselExampleFade" data-aos="fade-down" data-aos-duration="1000" class="carousel slide carousel-fade align-content-center  rounded-pill p-5 m-5" data-bs-ride="carousel" style="border-width: 3px; border-style:solid;border-color: #ee6b4e;">
+
+                    <div class="carousel-indicators">
+                        <button type="button" style="background-color: #3c5b80;" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" style="background-color: #3c5b80;" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" style="background-color: #3c5b80;" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" style="background-color: #3c5b80;" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " data-bs-interval="2000">
+                            <img src="Reviews/1.png" class=" d-block " alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000 ">
+                            <img src="Reviews/2.png " class="d-block " alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000 ">
+                            <img src="Reviews/3.png" class="d-block " alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <img src="Reviews/4.png" class="d-block" alt="...">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev btn arrow" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class=" " aria-hidden="true">  <i class="fa fa-chevron-left" style="color: #3c5b80; font-size: 30px; "></i></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade " data-bs-slide="next ">
+            <span class="" aria-hidden="true"> <i class="fa fa-chevron-right" style="color: #3c5b80; font-size: 30px; "></i></span>
+            <span class="visually-hidden ">Next</span>
+          </button>
+
+                </div>
+
+            </section>
+
+            <footer>
+                <div class="footer " style=" display: flex; margin: 0em 2em; justify-content: space-between; margin: 0; /*width: 100% !important;*/ padding: 5em 7em; flex-direction: row; ">
+                    <div style="display: flex; flex-direction: column; align-items: start ">
+                        <div class="footer-text ">
+                            <i class="fa fa-envelope " style="color: #97bfd8; font-size: 20px; margin-right: 15px "></i>
+                            <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; ">
+                                &nbsp;createimpact22@gmail.com<br />
+                            </p>
+                        </div>
+                        <div class="footer-text ">
+                            <i class="fa fa-phone " style="color: #97bfd8; font-size: 20px; margin-right: 15px "></i>
+                            <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; ">
+                                (+92)320-1276028<br />
+                            </p>
+                        </div>
+                        <div class="footer-text " style="align-items: baseline ">
+                            <i class="fa fa-map-marker " style="color: #97bfd8; margin-right: 15px; font-size: 20px "></i>
+                            <p class="text-center " style=" font-family: Nunito, sans-serif; color: #3c5b80; font-size: 20px; text-align: left !important; width: 200px; ">
+                                ICCBS Technology Incubator and Industrial Park, University of Karachi, Karachi,&nbsp;Pakistan
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-right " style="display: flex; width: 500px ">
+                        <div style=" display: flex; flex-direction: column; align-items: flex-start; ">
+                            <h1 style=" font-size: 25px; font-family: Nunito, sans-serif; font-weight: 700; margin-bottom: 25px; color: #ee6b4e; ">
+                                Services
+                            </h1>
+                            <a class="js-scroll-trigger service-link " href="services/start-your-business.html ">Start your business</a
             ><a
               class="js-scroll-trigger service-link "
               href="services/seo-content-writing.html "
@@ -984,12 +847,19 @@
                             Links
                         </h1>
                         <a class="js-scroll-trigger service-link " href="index.html#home ">Home</a
+            >
+            <a class="js-scroll-trigger service-link " href="index.html#about-us "
+              >About Us</a
             ><a class="js-scroll-trigger service-link " href="index.html#our-services "
               >Services</a
-            ><a class="js-scroll-trigger service-link " href="index.html#about-us "
-              >About Us</a
             ><a class="js-scroll-trigger service-link " href="index.html#contact "
               >Contact</a
+            >
+            <a class="js-scroll-trigger service-link " href="index.html#clients"
+              >Clients</a
+            >
+            <a class="js-scroll-trigger service-link " href="index.html#reviews "
+              >Reviews</a
             >
           </div>
         </div>
@@ -1016,31 +886,73 @@
           style="font-size: 30px; margin-right: 25px; margin-left: 25px"
         ></i
       ></a>
-        </div>
-    </div>
-      <p style="font-family: Nunito, sans-serif; font-size: 15px; color: black; ">
-        
-        ©&nbsp;The Create Impact 2022. All Rights Reserved.
-      </p>
-    </footer>
-    <div class="overlay "></div>
-    <script src="../unpkg.com/%40lottiefiles/lottie-player%401.5.7/dist/lottie-player.js "></script>
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
-    <script src="assets/js/smart-forms.min.js "></script>
-    <script src="assets/js/bs-init.js "></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
-    <script src="assets/js/Clients.js "></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js "></script>
-    <script src="assets/js/new-age.js "></script>
-    <script src="assets/js/responsive-blog-card-slider-1.js "></script>
-    <script src="assets/js/responsive-blog-card-slider.js "></script>
-    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js "></script>
-    <script src="assets/js/Testimonial.js"></script>
-    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
-<!-- partial -->
-  <script  src="assets/js/script.js"></script>
-  </body>
+                        </div>
+                    </div>
+                    <p style="font-family: Nunito, sans-serif; font-size: 15px; color: black; ">
+
+                        ©&nbsp;The Create Impact. All Rights Reserved.
+                    </p>
+            </footer>
+            <div class="overlay "></div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+            <script src="assets/js/b.js"></script>
+            <script src="../unpkg.com/%40lottiefiles/lottie-player%401.5.7/dist/lottie-player.js "></script>
+            <script src="assets/js/jquery.min.js "></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js "></script>
+            <script src="assets/js/smart-forms.min.js "></script>
+            <script src="assets/js/bs-init.js "></script>
+            <script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+            <script src="assets/js/Clients.js "></script>
+            <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
+            <script src="../cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js "></script>
+            <script src="assets/js/new-age.js "></script>
+            <script src="assets/js/responsive-blog-card-slider-1.js "></script>
+            <script src="assets/js/responsive-blog-card-slider.js "></script>
+            <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js "></script>
+            <script src="assets/js/Testimonial.js"></script>
+            <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js " integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk " crossorigin="anonymous "></script>
+            <!-- partial -->
+            <script src="assets/js/script.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $("#contact-form").on("submit", function(e) {
+                        e.preventDefault();
+                        if ($("#contact-form [name='your_name']").val() === '') {
+                            $("#contact-form [name='your_name']").css("border", "1px solid red");
+                        } else if ($("#contact-form [name='your_email']").val() === '') {
+                            $("#contact-form [name='your_email']").css("border", "1px solid red");
+                        } else if ($("#contact-form [name='your_phone']").val() === '') {
+                            $("#contact-form [name='your_phone']").css("border", "1px solid red");
+                        } else if ($("#contact-form [name='your_service']").val() === '') {
+                            $("#contact-form [name='your_service']").css("border", "1px solid red");
+                        } else if ($("#contact-form [name='your_price']").val() === '') {
+                            $("#contact-form [name='your_price']").css("border", "1px solid red");
+                        } else {
+                            var sendData = $(this).serialize();
+                            $.ajax({
+                                type: "POST",
+                                url: "get_response.php",
+                                data: sendData,
+                                success: function(data) {
+                                    $(".response_msg").text(data);
+                                    $("#contact-form").find("input[type=text], input[type=email], textarea").val("");
+                                }
+                            });
+                        }
+                    });
+                    $("#contact-form input").blur(function() {
+                        var checkValue = $(this).val();
+                        if (checkValue != '') {
+                            $(this).css("border", "1px solid #eeeeee");
+                        }
+                    });
+                });
+            </script>
+</body>
 
 </html>

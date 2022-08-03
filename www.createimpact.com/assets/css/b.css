@@ -1,0 +1,6 @@
+.word {
+    margin: auto;
+    color: #3c5b80;
+    font: 700 normal 1.5em 'tahoma';
+    text-shadow: 5px 2px white, 2px 4px white, 3px 5px white;
+}
